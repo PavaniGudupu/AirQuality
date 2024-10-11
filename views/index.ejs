@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirQuality</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <center>
+        <h1>AIR QUALITY API</h1>
+    </center>
+
+    <center><h3>RETRIEVE DATA</h3></center>
+
+    <form action="/" method="POST" id="myForm">
+        <div class="form-group">
+            <label for="countries">List of Country Names:</label>
+            <button type="submit" id="countries" formaction="/getCountry" formmethod="POST">GET Countries</button>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Enter Country Name:</label>
+            <input type="text" placeholder="Country Name" id="country" name="country">
+            <button type="submit" id="country-sub" formaction="/getState" formmethod="POST">GET States</button>
+        </div>
+
+        <div class="form-group">
+            <label for="state">Enter State Name:</label>
+            <input type="text" placeholder="State Name" id="state" name="state">
+            <button type="submit" id="state-sub" formaction="/getCities" formmethod="POST">GET Cities</button>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Enter City Name:</label>
+            <input type="text" placeholder="City Name" id="city" name="city">
+            <button type="submit" id="city-sub" formaction="/getCity" formmethod="POST">GET specified City</button>
+        </div>
+    </form>
+
+    <br>
+
+    <center><h3>FIND WHICH CITY IS NEAR TO ME ?</h3></center>
+
+    <form action="/" method="POST" id="mynextForm">
+        <div class="form-group">
+            <label for="countries">Nearest City Data:</label>
+            <button type="submit" id="city-sub" formaction="/getNearestCity" formmethod="POST">GET Nearest City</button>
+        </div>
+        
+        <br>
+
+        <div class="form-group">
+            <label for="lat">Enter GPS Coordinates:</label>
+            <input type="text" placeholder="Latitude" id="lat" name="lat">
+            <input type="text" placeholder="Longitude" id="lon" name="lon">
+            <button type="submit" id="coordinat_city_sub" formaction="/getGPSCity" formmethod="POST">GET City by GPS</button>
+        </div>
+    </form>
+
+    <br><br>
+
+    <footer class="footer">
+        <a href="mailto:pavani9419@gmail.com">pavani9419@gmail.com | 2024</a>
+    </footer>
+</body>
+</html>

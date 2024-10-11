@@ -1,0 +1,142 @@
+h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 15px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #ff00cc, #eeff33, #ff00cc, #d773f0) 1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-image: url("air.jpg");
+    background-color: rgb(228, 241, 176);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#myForm {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #ff00cc, #eeff33, #ff00cc, #d773f0) 1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#mynextForm {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 410px;
+    border-radius: 15px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #ff00cc, #eeff33, #ff00cc, #d773f0) 1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: rgba(240, 248, 255, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: rgba(52, 86, 240, 0.973);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(19, 188, 44);
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    #myForm {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #2be3e6;
+}
+
+h1, h3 {
+    margin: 10px 0;
+}
+
+.form-group {
+    margin: 15px 0;
+}
